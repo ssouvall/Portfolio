@@ -981,7 +981,7 @@ mark {
   }
 }
 .home-banner .hb-typo h1 {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 600;
   color: #00171f;
   margin-bottom: 10px;
@@ -1113,6 +1113,25 @@ mark {
   .about-img img {
     max-width: 120%;
   }
+}
+
+.icon-box {
+  align-items: center;
+  background: white;
+  display: flex;
+  margin: 10px;
+  padding: 20px;
+}
+
+.icon-box h3 {
+  color: black;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.skill-icon {
+  font-size: 32px;
+  padding-right: 10px;
 }
 
 /* Feature Box
