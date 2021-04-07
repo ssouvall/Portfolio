@@ -1123,6 +1123,12 @@ mark {
   padding: 20px;
 }
 
+@media (min-width: 800px) {
+  .icon-box {
+    max-width: 30%!important;
+  }
+}
+
 .icon-box h3 {
   color: black;
   font-size: 16px;
