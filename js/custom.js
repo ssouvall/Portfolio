@@ -97,48 +97,53 @@
     /*--------------------
     * OwlSlider
     ----------------------*/
-    NAY.Owl = function () {
-      var owlslider = jQuery("div.owl-carousel");
-      if(owlslider.length > 0) {  
-         loadScript(plugin_track + '/js/owl.carousel.min.js', function() {
-           owlslider.each(function () {
-            var $this = $(this),
-                $items = ($this.data('items')) ? $this.data('items') : 1,
-                $loop = ($this.attr('data-loop')) ? $this.data('loop') : true,
-                $navdots = ($this.data('nav-dots')) ? $this.data('nav-dots') : false,
-                $navarrow = ($this.data('nav-arrow')) ? $this.data('nav-arrow') : false,
-                $autoplay = ($this.attr('data-autoplay')) ? $this.data('autoplay') : true,
-                $autospeed = ($this.attr('data-autospeed')) ? $this.data('autospeed') : 5000,
-                $smartspeed = ($this.attr('data-smartspeed')) ? $this.data('smartspeed') : 1000,
-                $autohgt = ($this.data('autoheight')) ? $this.data('autoheight') : false,
-                $CenterSlider = ($this.data('center')) ? $this.data('center') : false,
-                $space = ($this.attr('data-space')) ? $this.data('space') : 30;    
+    // NAY.Owl = function () {
+    //   var owlslider = jQuery("div.owl-carousel");
+    //   if(owlslider.length > 0) {  
+    //      loadScript(plugin_track + '/js/owl.carousel.min.js', function() {
+    //        owlslider.each(function () {
+    //         var $this = $(this),
+    //             $items = ($this.data('items')) ? $this.data('items') : 1,
+    //             $loop = ($this.attr('data-loop')) ? $this.data('loop') : true,
+    //             $navdots = ($this.data('nav-dots')) ? $this.data('nav-dots') : false,
+    //             $navarrow = ($this.data('nav-arrow')) ? $this.data('nav-arrow') : false,
+    //             $autoplay = ($this.attr('data-autoplay')) ? $this.data('autoplay') : true,
+    //             $autospeed = ($this.attr('data-autospeed')) ? $this.data('autospeed') : 5000,
+    //             $smartspeed = ($this.attr('data-smartspeed')) ? $this.data('smartspeed') : 1000,
+    //             $autohgt = ($this.data('autoheight')) ? $this.data('autoheight') : false,
+    //             $CenterSlider = ($this.data('center')) ? $this.data('center') : false,
+    //             $space = ($this.attr('data-space')) ? $this.data('space') : 30;    
            
-                $(this).owlCarousel({
-                    loop: $loop,
-                    items: $items,
-                    responsive: {
-                      0:{items: $this.data('xx-items') ? $this.data('xx-items') : 1},
-                      480:{items: $this.data('xs-items') ? $this.data('xs-items') : 1},
-                      768:{items: $this.data('sm-items') ? $this.data('sm-items') : 1},
-                      980:{items: $this.data('md-items') ? $this.data('md-items') : 1},
-                      1200:{items: $items}
-                    },
-                    dots: $navdots,
-                    autoplayTimeout:$autospeed,
-                    smartSpeed: $smartspeed,
-                    autoHeight:$autohgt,
-                    center:$CenterSlider,
-                    margin:$space,
-                    nav: $navarrow,
-                    navText:["<i class='ti-arrow-left'></i>","<i class='ti-arrow-right'></i>"],
-                    autoplay: $autoplay,
-                    autoplayHoverPause: true   
-                }); 
-           }); 
-         });
-      }
-    }
+    //             $(this).owlCarousel({
+    //                 loop: $loop,
+    //                 items: $items,
+    //                 responsive: {
+    //                   0:{items: $this.data('xx-items') ? $this.data('xx-items') : 1},
+    //                   480:{items: $this.data('xs-items') ? $this.data('xs-items') : 1},
+    //                   768:{items: $this.data('sm-items') ? $this.data('sm-items') : 1},
+    //                   980:{items: $this.data('md-items') ? $this.data('md-items') : 1},
+    //                   1200:{items: $items}
+    //                 },
+    //                 dots: $navdots,
+    //                 autoplayTimeout:$autospeed,
+    //                 smartSpeed: $smartspeed,
+    //                 autoHeight:$autohgt,
+    //                 center:$CenterSlider,
+    //                 margin:$space,
+    //                 nav: $navarrow,
+    //                 navText:["<i class='ti-arrow-left'></i>","<i class='ti-arrow-right'></i>"],
+    //                 autoplay: $autoplay,
+    //                 autoplayHoverPause: true   
+    //             }); 
+    //        }); 
+    //      });
+    //   }
+    // }
+
+	$(document).ready(function(){
+		$(".owl-carousel").owlCarousel();
+		navigation: true
+	  });
 
 	/* ---------------------------------------------- /*
      * lightbox gallery
@@ -211,8 +216,9 @@
     // }
 
 	new TypeIt("#type-it", {
-		strings: "Full-Stack .NET Developer",
-		speed: 75,
+		strings: ["Software Engineer", "Full-Stack .NET Developer"],
+		breakLines: false,
+		speed: 125,
 		loop: true
 	  }).go();
 
@@ -269,3 +275,26 @@
 
 
 })(jQuery);
+
+// EmailJS
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_8lxvliv';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
