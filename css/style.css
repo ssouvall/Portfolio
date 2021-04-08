@@ -1312,7 +1312,19 @@ mark {
 
 /* Portfolio
 ---------------------------*/
+#portfolio {
+  background-color: rgba(3, 27, 163, 0.13);
+}
+
+.portfolio-box img {
+  object-fit: cover;
+  height: 20rem;
+  width: 100%;
+}
+
 .portfolio-box {
+  height: 20rem;
+  width: auto;
   position: relative;
   overflow: hidden;
   top: 0;
@@ -1350,6 +1362,7 @@ mark {
   font-weight: 500;
   color: #fff;
 }
+
 .portfolio-box .gallery-link {
   position: absolute;
   bottom: 0;

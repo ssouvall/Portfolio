@@ -194,21 +194,27 @@
     /*--------------------
         * Type It
     ----------------------*/
-    NAY.mTypeIt = function() {
-    	if ($("#type-it").exists()){
-            loadScript(plugin_track + 'typeit-master/typeit.min.js', function() {
-                new TypeIt('#type-it', {
-		            speed: 200,
-		            loop:true,
-		            strings: [
-		              'Designer',
-		              'Developer'
-		            ],
-		            breakLines: false
-		        }); 
-          });
-        }
-    }
+    // NAY.mTypeIt = function() {
+    // 	if ($("#type-it").exists()){
+    //         loadScript(plugin_track + '/js/typeit.min.js', function() {
+    //             new TypeIt('#type-it', {
+	// 	            speed: 200,
+	// 	            loop:true,
+	// 	            strings: [
+	// 	              'Designer',
+	// 	              'Developer'
+	// 	            ],
+	// 	            breakLines: false
+	// 	        }); 
+    //       });
+    //     }
+    // }
+
+	new TypeIt("#type-it", {
+		strings: "Full-Stack .NET Developer",
+		speed: 75,
+		loop: true
+	  }).go();
 
 	/* ---------------------------------------------- /*
 	 * All Functions
