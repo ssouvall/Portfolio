@@ -1455,9 +1455,16 @@ mark {
   margin-right: 30px;
 }
 .blog-post .blog-img {
+  height: 15rem;
   border-radius: 5px;
   overflow: hidden;
 }
+
+.blog-post .blog-img img {
+  height: 15rem;
+  width: 100%;
+}
+
 .blog-post .blog-info {
   padding-top: 25px;
 }

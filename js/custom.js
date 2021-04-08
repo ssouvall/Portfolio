@@ -292,9 +292,19 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Send Email';
-      alert('Sent!');
+      Swal.fire({
+		title: 'Email Sent!',
+		text: 'Thank you for your message! I will respond within 24 hours.',
+		icon: 'success',
+		confirmButtonText: 'Great!'
+	  })
     }, (err) => {
       btn.value = 'Send Email';
-      alert(JSON.stringify(err));
+	  Swal.fire({
+		title: 'Error!',
+		text: JSON.stringify(err),
+		icon: 'error',
+		confirmButtonText: 'Try again'
+	  })
     });
 });
