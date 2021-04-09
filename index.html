@@ -32,9 +32,6 @@
 <!-- Body Start -->
 
 <body data-spy="scroll" data-target="#navbar-collapse-toggle" data-offset="70">
-<!-- Change Notes! -->
-    <!-- Background image on css sheet: .home-banner -->
-
     <!-- page loading -->
     <div id="loading">
         <div class="load-circle"><span class="one"></span></div>
@@ -63,6 +60,12 @@
                         <li><a class="nav-link" href="#portfolio"><span>Portfolio</span></a></li>
                         <li><a class="nav-link" href="#blog"><span>Blog</span></a></li>
                         <li><a class="nav-link" href="#contactus"><span>Contact</span></a></li>
+                        <li><div class="nav-link nav-social-buttons">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <!-- / -->
@@ -85,9 +88,8 @@
                             <h2>A <span id="type-it"></span>
                             </h2>
                             <div class="nav justify-content-center justify-content-lg-start">
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="btn cta-click">Hire Me   <i class="fas fa-check cta-btns"></i></a>
+                                <a href="#" id="project-btn" class="btn cta-click btn-outline-primary">See My Work<i class="fas fa-project-diagram cta-btns"></i></a>
                             </div>
                        
                             <!-- TODO: ADD HIRE ME BUTTON HERE -->
@@ -475,8 +477,8 @@
                                 <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites, web services and online stores.</p>
                             </div>
                         </div>
-                        <div class="owl-carousel" data-items="3" data-nav-dots="true" data-md-items="3" data-sm-items="2" data-xs-items="1" data-xx-items="1" data-space="30">
-                            <div class="blog-post">
+                        <div class="row owl-carousel" data-items="3" data-nav-dots="true" data-md-items="3" data-sm-items="2" data-xs-items="1" data-xx-items="1" data-space="30">
+                            <div class="col-sm-12 blog-post">
                                 <div class="blog-img">
                                     <a href="blog.html">
                                         <img src="/img/the-grid.jpg" title="" alt="">
@@ -493,7 +495,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="blog-post">
+                            <div class="col-sm-12 blog-post">
                                 <div class="blog-img">
                                     <a href="blog.html">
                                         <img src="/img/git-article.jpg" title="" alt="">
@@ -510,7 +512,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="blog-post">
+                            <div class="col-sm-12 blog-post">
                                 <div class="blog-img">
                                     <a href="blog.html">
                                         <img src="/img/blog-test.jpg" title="" alt="">
@@ -527,7 +529,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="blog-post">
+                            <div class="col-sm-12 blog-post">
                                 <div class="blog-img">
                                     <a href="blog.html">
                                         <img src="/img/template.jpg" title="" alt="">
@@ -544,7 +546,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="blog-post">
+                            <div class="col-sm-12 blog-post">
                                 <div class="blog-img">
                                     <a href="blog.html">
                                         <img src="/img/launch.jpg" title="" alt="">
