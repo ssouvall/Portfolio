@@ -1041,6 +1041,7 @@ mark {
   background: #203ff1;
   color: #fff;
   border-radius: 10px;
+  width: 40%;
 }
 
 .project-btn,
@@ -1051,6 +1052,7 @@ mark {
   color: #203ff1;
   font-weight: 500;
   margin-left: 5%;
+  width: 50%;
 }
 
 .project-btn:hover,
@@ -1352,6 +1354,24 @@ mark {
   padding-left: 15px;
 }
 
+.resume-btn {
+  background: #203ff1;
+  border-radius: 10px;
+  color: white;
+}
+
+.resume-btn-big {
+  margin-left: 35%;
+  margin-right: 35%;
+  width: 30%;
+}
+
+.resume-btn-sm {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
+
 /* Portfolio
 ---------------------------*/
 #portfolio {
@@ -1411,7 +1431,6 @@ mark {
   right: 0;
   width: 50px;
   height: 50px;
-  background: #203ff1;
 }
 .portfolio-box .gallery-link span {
   position: absolute;
@@ -1594,6 +1613,18 @@ mark {
 }
 .contactus-form .btn-bar {
   padding-top: 15px;
+}
+
+/* Modals
+---------------------------*/
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-photo {
+  width: 50%;
+  height: 50%;
 }
 
 /* Skill Bar

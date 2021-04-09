@@ -296,8 +296,12 @@
 		console.log($(this).width())
 		if ($(this).width() < 500) {
 			$(".cta-click").removeClass("btn-lg")
+			$(".resume-btn").removeClass("resume-btn-big")
+			$(".resume-btn").addClass("resume-btn-sm")
 		} else {
 			$(".cta-click").addClass("btn-lg")
+			$(".resume-btn").addClass("resume-btn-big")
+			$(".resume-btn").removeClass("resume-btn-sm")
 		}
 	}).trigger("resize");
 
