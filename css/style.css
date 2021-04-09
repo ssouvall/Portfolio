@@ -1037,13 +1037,26 @@ mark {
   transition: ease all 0.35s;
 }
 
+.hire-me {
+  background: #203ff1;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.project-btn,
 #project-btn {
   background: transparent;
-  border: #203ff1 double 1px solid;
+  border: #203ff1 double solid;
   box-shadow: 0 0 0 1px #203ff1;
   color: #203ff1;
   font-weight: 500;
   margin-left: 5%;
+}
+
+.project-btn:hover,
+#project-btn:hover {
+  background: #203ff1;
+  color: white;
 }
 
 .cta-btns {
@@ -1059,6 +1072,12 @@ mark {
 
 /* About Us
 ---------------------------*/
+@media (min-width: 991px) {
+  #about {
+    padding: 100px 0;
+  }
+}
+
 @media (max-width: 1200px) {
   .about-text {
     padding-top: 30px;
