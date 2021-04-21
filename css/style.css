@@ -1100,12 +1100,12 @@ mark {
 }
 
 .home-banner .hb-avatar img {
-  height: 80vh;
+  height: 90vh;
 }
 
 @media (max-width: 1200px) {
-  .hb-avatar img {
-    height: auto;
+  .home-banner .hb-avatar img {
+    height: 100vh;
   }
 }
 

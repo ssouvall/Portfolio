@@ -227,7 +227,6 @@
 	$(window).on("resize", function () {});
 
 	$(window).bind("resize", function () {
-		console.log($(this).width())
 		if ($(this).width() < 500) {
 			$(".cta-click").removeClass("btn-lg")
 			$(".resume-btn").removeClass("resume-btn-big")
