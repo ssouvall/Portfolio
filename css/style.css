@@ -1103,21 +1103,16 @@ mark {
   height: 90vh;
 }
 
-/* @media (max-width: 1200px) {
-  .home-banner .hb-avatar img {
-    height: 100vh;
-  }
-} */
-
 .home-banner .hb-typo {
   padding-left: 25px;
 }
 
 @media (max-width: 1200px) {
   .home-banner .hb-typo {
-    padding: 45px 25px;
+    padding: 25px 25px;
     background: rgba(255, 255, 255, 0.8);
     text-align: center;
+    margin-top: 50px;
   }
 }
 
