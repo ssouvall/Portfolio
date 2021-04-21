@@ -1302,6 +1302,7 @@ mark {
 }
 
 .about-me-pic {
+  margin-top: 50px !important;
   height: 80%;
   width: 80%;
 }
