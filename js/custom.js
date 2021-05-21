@@ -282,6 +282,8 @@ document.getElementById("calculatorBtn").addEventListener('click', function () {
 		title: 'Mortgage Calculator',
 		text: 'Use this tool to get loan information such as amortization schedule, total principal, total interest, and total loan cost. Built with HTML, CSS, JavaScript, Bootstrap 4, and JQuery.',
 		imageUrl: '/img/mortgage-calculator.jpg',
+		showCloseButton: true,
+		showCancelButton: true,
 		imageWidth: 400,
 		imageHeight: 300,
 		imageAlt: 'Mortgage Calculator House',
@@ -298,6 +300,8 @@ document.getElementById("superdogBtn").addEventListener('click', function () {
 	Swal.fire({
 		title: 'SuperDog Events',
 		text: 'SuperDog Events is an event company that produces comic cons. The marketing team has requested a site the displays stats from their events. The application allows the user to add and delete events and displays up-to-date stats for all events. Built with HTML, CSS, JavaScript, Bootstrap 4, and JQuery.',
+		showCloseButton: true,
+		showCancelButton: true,
 		imageUrl: '/img/superdog.jpg',
 		imageWidth: 300,
 		imageHeight: 400,
@@ -315,6 +319,8 @@ document.getElementById("tacocatBtn").addEventListener('click', function () {
 	Swal.fire({
 		title: 'Tacocat: a Palindrome Checker',
 		text: 'Tacocat takes in a word, phrase, or paragraph and checks if it is a palindrome (i.e. it reads the same backward and forward). Built with HTML, CSS, JavaScript, Bootstrap 4, and JQuery.',
+		showCloseButton: true,
+		showCancelButton: true,
 		imageUrl: '/img/cat.jpg',
 		imageWidth: 300,
 		imageHeight: 300,
@@ -332,6 +338,8 @@ document.getElementById("fizzbuzzBtn").addEventListener('click', function () {
 	Swal.fire({
 		title: 'FizzBuzz',
 		text: 'FizzBuzz is a classic coding challenge that lists every number between 1 and 100. If a number is divisible by 3, it is replaced with "Fizz". If a number is divisible by 5, it is replaced with "Buzz". If a number is divisible by both 3 AND 5, it is replaced with "FizzBuzz". This app goes a step further, allowing the user to customize the number range and the two divisors. Built with HTML, CSS, JavaScript, and JQuery.',
+		showCloseButton: true,
+		showCancelButton: true,
 		imageUrl: '/img/fizz-buzz.jpg',
 		imageWidth: 200,
 		imageHeight: 300,
@@ -349,6 +357,8 @@ document.getElementById("calculatorBtn").addEventListener('click', function () {
 	Swal.fire({
 		title: 'Mortgage Calculator',
 		text: 'Use this tool to get loan information such as amortization schedule, total principal, total interest, and total loan cost. Built with HTML, CSS, JavaScript, and JQuery.',
+		showCloseButton: true,
+		showCancelButton: true,
 		imageUrl: '/img/mortgage-calculator.jpg',
 		imageWidth: 400,
 		imageHeight: 300,
@@ -366,6 +376,8 @@ document.getElementById("calculatorBtn").addEventListener('click', function () {
 	Swal.fire({
 		title: 'Mortgage Calculator',
 		text: 'Use this tool to get loan information such as amortization schedule, total principal, total interest, and total loan cost. Built with HTML, CSS, JavaScript, and JQuery.',
+		showCloseButton: true,
+		showCancelButton: true,
 		imageUrl: '/img/mortgage-calculator.jpg',
 		imageWidth: 400,
 		imageHeight: 300,
