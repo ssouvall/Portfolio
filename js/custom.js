@@ -277,6 +277,27 @@ document.getElementById('form')
 /* ---------------------------------------------- /*
 	 * SweetAlert Modals for Projects
 /* ---------------------------------------------- */
+
+document.getElementById("blogBtn").addEventListener('click', function () {
+	Swal.fire({
+		title: 'Coder Blog',
+		text: 'A full-stack blogging platform built using ASP.NET Core MVC, C#, and Entity Framework',
+		imageUrl: '/img/blog.jpg',
+		showCloseButton: true,
+		showCancelButton: true,
+		imageWidth: 400,
+		imageHeight: 300,
+		imageAlt: 'Blogger at a desk',
+		confirmButtonText: 'To the App!',
+	}).then((result) => {
+		if (result.value) {
+			window.open('//souvallblog.herokuapp.com', '_blank')
+
+		}
+
+	})
+});
+
 document.getElementById("calculatorBtn").addEventListener('click', function () {
 	Swal.fire({
 		title: 'Mortgage Calculator',
@@ -290,7 +311,7 @@ document.getElementById("calculatorBtn").addEventListener('click', function () {
 		confirmButtonText: 'To the App!',
 	}).then((result) => {
 		if (result.value) {
-			window.location.href = `//stephensouvall-mortgage.netlify.app`
+			window.open('//stephensouvall-mortgage.netlify.app', '_blank')
 		}
 
 	})
@@ -309,7 +330,7 @@ document.getElementById("superdogBtn").addEventListener('click', function () {
 		confirmButtonText: 'To the App!',
 	}).then((result) => {
 		if (result.value) {
-			window.location.href = `//stephensouvall-superdog.netlify.app`
+			window.open('//stephensouvall-superdog.netlify.app', '_blank')
 		}
 
 	})
@@ -328,7 +349,7 @@ document.getElementById("tacocatBtn").addEventListener('click', function () {
 		confirmButtonText: 'To the App!',
 	}).then((result) => {
 		if (result.value) {
-			window.location.href = `//stephensouvall-tacocat.netlify.app`
+			window.open('//stephensouvall-tacocat.netlify.app', '_blank')
 		}
 
 	})
@@ -347,7 +368,7 @@ document.getElementById("fizzbuzzBtn").addEventListener('click', function () {
 		confirmButtonText: 'To the App!',
 	}).then((result) => {
 		if (result.value) {
-			window.location.href = `//stephensouvall-fizzbuzz.netlify.app`
+			window.open('//stephensouvall-fizzbuzz.netlify.app', '_blank')
 		}
 
 	})
@@ -366,7 +387,7 @@ document.getElementById("calculatorBtn").addEventListener('click', function () {
 		confirmButtonText: 'To the App!',
 	}).then((result) => {
 		if (result.value) {
-			window.location.href = `//stephensouvall-mortgage.netlify.app`
+			window.open('//stephensouvall-mortgage.netlify.app', '_blank')
 		}
 
 	})
@@ -385,7 +406,7 @@ document.getElementById("calculatorBtn").addEventListener('click', function () {
 		confirmButtonText: 'To the App!',
 	}).then((result) => {
 		if (result.value) {
-			window.location.href = `//stephensouvall-mortgage.netlify.app`
+			window.open('//stephensouvall-mortgage.netlify.app', '_blank')
 		}
 
 	})
