@@ -374,20 +374,20 @@ document.getElementById("fizzbuzzBtn").addEventListener('click', function () {
 	})
 });
 
-document.getElementById("calculatorBtn").addEventListener('click', function () {
+document.getElementById("toDoBtn").addEventListener('click', function () {
 	Swal.fire({
-		title: 'Mortgage Calculator',
-		text: 'Use this tool to get loan information such as amortization schedule, total principal, total interest, and total loan cost. Built with HTML, CSS, JavaScript, and JQuery.',
+		title: 'Task Master',
+		text: "Task Master is a to-do list built using HTML, CSS, JavaScript, and JQuery. By using LocalStorage, the app is able to persist user data without a database.",
 		showCloseButton: true,
 		showCancelButton: true,
-		imageUrl: '/img/mortgage-calculator.jpg',
+		imageUrl: '/img/to-do-list.jpg',
 		imageWidth: 400,
 		imageHeight: 300,
-		imageAlt: 'Mortgage Calculator House',
+		imageAlt: 'task master tasks',
 		confirmButtonText: 'To the App!',
 	}).then((result) => {
 		if (result.value) {
-			window.open('//stephensouvall-mortgage.netlify.app', '_blank')
+			window.open('//stephensouvall-taskmaster.netlify.app', '_blank')
 		}
 
 	})
