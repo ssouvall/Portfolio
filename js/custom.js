@@ -411,3 +411,22 @@ document.getElementById("calculatorBtn").addEventListener('click', function () {
 
 	})
 });
+
+document.getElementById("emrBtn").addEventListener('click', function () {
+	Swal.fire({
+		title: 'Pro-Chart EMR',
+		text: 'A physical therapy clinic scheduling and charting tool, build using C#, ASP.NET, PostgreSQL, Entity Framework, MVC, MVVM, HTML, CSS, JavaScript, JQuery, Bootstrap.',
+		showCloseButton: true,
+		showCancelButton: true,
+		imageUrl: '/img/charting.jpg',
+		imageWidth: 400,
+		imageHeight: 300,
+		imageAlt: 'Healthcare worker charting',
+		confirmButtonText: 'To the App!',
+	}).then((result) => {
+		if (result.value) {
+			window.open('//souvallprochart.herokuapp.com', '_blank')
+		}
+
+	})
+});
