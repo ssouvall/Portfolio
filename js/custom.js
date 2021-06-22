@@ -412,6 +412,25 @@ document.getElementById("calculatorBtn").addEventListener('click', function () {
 	})
 });
 
+document.getElementById("bugTrackerBtn").addEventListener('click', function () {
+	Swal.fire({
+		title: 'Bug-Zapper',
+		text: 'An enterprise-grade issue tracking system built with C#, ASP.NET, Entity Framework, Bootsrap, HTML/CSS, JavaScript, and JQuery',
+		showCloseButton: true,
+		showCancelButton: true,
+		imageUrl: '/img/Bug-Tracker.jpg',
+		imageWidth: 400,
+		imageHeight: 300,
+		imageAlt: 'Bug Tracker Image',
+		confirmButtonText: 'To the App!',
+	}).then((result) => {
+		if (result.value) {
+			window.open('//souvallbugtracker.herokuapp.com', '_blank')
+		}
+
+	})
+});
+
 document.getElementById("emrBtn").addEventListener('click', function () {
 	Swal.fire({
 		title: 'Pro-Chart EMR',
