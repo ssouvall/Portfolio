@@ -244,8 +244,8 @@
                             <br>
                             <ul>
                                 <li>A blog site using C#, MVC, HTML5, CSS3, Bootstrap, JS & jQuery.</li>
-                                <li>A Film Database implemented in two phases:<br>
-                                -An MVC Web Application.<br>
+                                <li>An interactive movie database implemented in two phases:<br>
+                                -An MVC Web Application (current development phase).<br>
                                 -An API Web Service that utilizes Swagger and Swashbuckle for integrated testing.
                                 </li>
                                 <li>Currently designing and developing a multi-functional issue tracker web application, implementing enhanced roles & security, including a Code-First relational database designed and modeled in PostgreSQL.</li>
@@ -323,7 +323,7 @@
                 </div>
             </div>
             <br>
-            <a class="btn btn-lg btn-primary resume-btn-big resume-btn" href="/img/Stephen Souvall Resume.pdf" download>Download Full Resume</a>
+            <a class="btn btn-lg btn-primary resume-btn-big resume-btn" href="/img/Souvall Resume.pdf" download>Download Full Resume</a>
         </section>
         <section id="portfolio" class="section">
             <div class="container">
@@ -340,6 +340,26 @@
                     <div class="col-sm-6 col-lg-4 my-1">
                         <div class="portfolio-box">
                             <div class="portfolio-img">
+                                <img src="/img/Bug-Tracker.jpg" title="" alt="">
+                            </div>
+                            <div class="portfolio-info">
+                                <div class="portfolio-info-in">
+                                    <h5>Bug Zapper</h5>
+                                    <span>An Enterprise Bug Tracking Application</span>
+                                    <div class="portfolio-links">
+                                        <br>
+                                        <button class="btn btn-primary" id="bugTrackerBtn" href="javascript:void();" data-target="#bugTrackerModal" data-toggle="modal" title="App 1"><i
+                                                class="bx bx-plus"></i>Demo</button>
+                                        <a class="btn btn-primary" href="//github.com/ssouvall/BugTracker.git" target="_blank" title="More Details"><i class="bx bx-link"></i>GitHub</a>
+                                    </div>    
+                                </div>
+                                <a class="gallery-link" href="/img/portfolio-1.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 my-1">
+                        <div class="portfolio-box">
+                            <div class="portfolio-img">
                                 <img src="/img/blog.jpg" title="" alt="">
                             </div>
                             <div class="portfolio-info">
@@ -348,31 +368,11 @@
                                     <span>A Full-Stack Blogging Application</span>
                                     <div class="portfolio-links">
                                         <br>
-                                        <button class="btn btn-primary" href="javascript:void();" data-target="#blogModal" data-toggle="modal" title="App 1"><i
+                                        <button class="btn btn-primary" id="blogBtn" href="javascript:void();" data-target="#blogModal" data-toggle="modal" title="App 1"><i
                                                 class="bx bx-plus"></i>Demo</button>
-                                        <button class="btn btn-primary" href="#" title="More Details"><i class="bx bx-link"></i>GitHub</button>
+                                        <a class="btn btn-primary" href="//github.com/ssouvall/RockwellBlog.git" target="_blank" title="More Details"><i class="bx bx-link"></i>GitHub</a>
                                     </div>
                                 </div>  
-                                <a class="gallery-link" href="/img/portfolio-1.jpg"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 my-1">
-                        <div class="portfolio-box">
-                            <div class="porfolio-img">
-                                <img src="/img/Bug-Tracker.jpg" title="bug-tracker" alt="bug image">
-                            </div>
-                            <div class="portfolio-info">
-                                <div class="portfolio-info-in">
-                                    <h5>Bug-Zapper (Coming Soon!)</h5>
-                                    <span>An Enterprise Bug-Tracking Application</span>
-                                    <div class="portfolio-links">
-                                        <br>
-                                        <button class="btn btn-primary" href="javascript:void();" data-target="#bugModal" data-toggle="modal" title="App 1"><i
-                                                class="bx bx-plus"></i>Demo</button>
-                                        <button class="btn btn-primary" href="#" title="More Details"><i class="bx bx-link"></i>GitHub</button>
-                                    </div>    
-                                </div>
                                 <a class="gallery-link" href="/img/portfolio-1.jpg"></a>
                             </div>   
                         </div>
@@ -380,17 +380,17 @@
                     <div class="col-sm-6 col-lg-4 my-1">
                         <div class="portfolio-box">
                             <div class="portfolio-img">
-                                <img src="/img/movie-pro.jpg" title="" alt="">
+                                <img src="/img/charting.jpg" title="" alt="">
                             </div>
                             <div class="portfolio-info">
                                 <div class="portfolio-info-in">
-                                    <h5>Movie-Pro (Coming Soon!)</h5>
-                                    <span>An Interactive Film Database</span>
+                                    <h5>Pro-Chart EMR</h5>
+                                    <span>A Physical Therapy Scheduling and Charting System</span>
                                     <div class="portfolio-links">
                                         <br>
-                                        <button class="btn btn-primary" href="javascript:void();" data-target="#movieModal" data-toggle="modal" title="App 1"><i
+                                        <button class="btn btn-primary" id="emrBtn" href="javascript:void();" data-target="#emrModal" data-toggle="modal" title="App 1"><i
                                                 class="bx bx-plus"></i>Demo</button>
-                                        <button class="btn btn-primary" href="#" title="More Details"><i class="bx bx-link"></i>GitHub</button>
+                                        <a class="btn btn-primary" href="//github.com/ssouvall/PTCalendar.git" target="_blank" title="More Details"><i class="bx bx-link"></i>GitHub</a>
                                     </div>
                                 </div>
                                 <a class="gallery-link" href="/img/portfolio-1.jpg"></a>
@@ -424,9 +424,29 @@
                                         <br>
                                         <button class="btn demo btn-primary" id="calculatorBtn" href="javascript:void();" title="App 1"><i
                                                 class="bx bx-plus"></i>Demo</button>
-                                        <a class="btn btn-primary" href="//github.com/ssouvall/Mortgage-Calculator.git" title="More Details"><i class="bx bx-link"></i>GitHub</a>
+                                        <a class="btn btn-primary" href="//github.com/ssouvall/Mortgage-Calculator.git" target="_blank" title="More Details"><i class="bx bx-link"></i>GitHub</a>
                                     </div> 
                                 </div> 
+                                <a class="gallery-link" href="/img/portfolio-1.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 my-1">
+                        <div class="portfolio-box">
+                            <div class="portfolio-img">
+                                <img src="/img/to-do-list.jpg" title="" alt="to-do-list">
+                            </div>
+                            <div class="portfolio-info">
+                                <div class="portfolio-info-in">
+                                    <h5>Task Master</h5>
+                                    <span>Using LocalStorage to create a To-Do List...but better</span>
+                                    <div class="portfolio-links">
+                                        <br>
+                                        <button class="btn demo btn-primary" href="javascript:void();" id="toDoBtn" title="App 1"><i
+                                                class="bx bx-plus"></i>Demo</button>
+                                        <a class="btn btn-primary" href="//github.com/ssouvall/to-do-list.git" target="_blank" title="More Details"><i class="bx bx-link"></i>GitHub</a>
+                                    </div>
+                                </div>  
                                 <a class="gallery-link" href="/img/portfolio-1.jpg"></a>
                             </div>
                         </div>
@@ -444,7 +464,7 @@
                                         <br>
                                         <button class="btn demo btn-primary" href="javascript:void();" id="superdogBtn" title="App 1"><i
                                                 class="bx bx-plus"></i>Demo</button>
-                                        <a class="btn btn-primary" href="//github.com/ssouvall/superDog.git" title="More Details"><i class="bx bx-link"></i>GitHub</a>
+                                        <a class="btn btn-primary" href="//github.com/ssouvall/superDog.git" target="_blank" title="More Details"><i class="bx bx-link"></i>GitHub</a>
                                     </div>
                                 </div>  
                                 <a class="gallery-link" href="/img/portfolio-1.jpg"></a>
@@ -464,7 +484,7 @@
                                         <br>
                                         <button class="btn demo btn-primary" href="javascript:void();" id="tacocatBtn" title="App 1"><i
                                                 class="bx bx-plus"></i>Demo</button>
-                                        <a class="btn btn-primary" href="//github.com/ssouvall/tacocat.git" title="More Details"><i class="bx bx-link"></i>GitHub</a>
+                                        <a class="btn btn-primary" href="//github.com/ssouvall/tacocat.git" target="_blank" title="More Details"><i class="bx bx-link"></i>GitHub</a>
                                     </div> 
                                 </div> 
                                 <a class="gallery-link" href="/img/portfolio-1.jpg"></a>
@@ -484,27 +504,7 @@
                                         <br>
                                         <button class="btn demo btn-primary" href="javascript:void();" id="fizzbuzzBtn" title="App 1"><i
                                                 class="bx bx-plus"></i>Demo</button>
-                                        <a class="btn btn-primary" href="//github.com/ssouvall/fizzbuzz.git" title="More Details"><i class="bx bx-link"></i>GitHub</a>
-                                    </div>
-                                </div>  
-                                <a class="gallery-link" href="/img/portfolio-1.jpg"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-4 my-1">
-                        <div class="portfolio-box">
-                            <div class="portfolio-img">
-                                <img src="/img/fears.jpg" title="" alt="">
-                            </div>
-                            <div class="portfolio-info">
-                                <div class="portfolio-info-in">
-                                    <h5>Sum of All Fears</h5>
-                                    <span>A Truly Suspensful Challenge</span>
-                                    <div class="portfolio-links">
-                                        <br>
-                                        <button class="btn demo btn-primary" href="javascript:void();" id="fearsBtn" title="App 1"><i
-                                                class="bx bx-plus"></i>Demo</button>
-                                        <a class="btn btn-primary" href="#" title="More Details"><i class="bx bx-link"></i>GitHub</a>
+                                        <a class="btn btn-primary" href="//github.com/ssouvall/fizzbuzz.git" target="_blank" title="More Details"><i class="bx bx-link"></i>GitHub</a>
                                     </div>
                                 </div>  
                                 <a class="gallery-link" href="/img/portfolio-1.jpg"></a>
@@ -518,13 +518,13 @@
                             </div>
                             <div class="portfolio-info">
                                 <div class="portfolio-info-in">
-                                    <h5>Sunset Hills</h5>
+                                    <h5>Sunset Hills (Coming soon!)</h5>
                                     <span>Which Building is Tallest?</span>
                                     <div class="portfolio-links">
                                         <br>
-                                        <button class="btn demo btn-primary" href="javascript:void();" id="sunsetBtn" title="App 1"><i
+                                        <button class="btn demo btn-primary disabled" href="javascript:void();" id="sunsetBtn" title="App 1"><i
                                                 class="bx bx-plus"></i>Demo</button>
-                                        <a class="btn btn-primary" href="#" title="More Details"><i class="bx bx-link"></i>GitHub</a>
+                                        <a class="btn btn-primary disabled" href="#" title="More Details"><i class="bx bx-link"></i>GitHub</a>
                                     </div>
                                 </div>  
                                 <a class="gallery-link" href="/img/portfolio-1.jpg"></a>
@@ -542,89 +542,104 @@
                             </div>
                         </div>
                         <div class="row owl-carousel" data-items="3" data-nav-dots="true" data-md-items="3" data-sm-items="2" data-xs-items="1" data-xx-items="1" data-space="30">
-                            <div class="col-sm-12 blog-post">
+                            <div id="blog1" class="col-sm-12 blog-post">
                                 <div class="blog-img">
-                                    <a href="">
-                                        <img src="/img/the-grid.jpg" title="" alt="">
+                                    <a href="" target="_blank">
+                                        <img src="" title="" alt="">
                                     </a>
                                 </div>
                                 <div class="blog-info">
-                                    <h6><a href="">Working with the Bootstrap Grid System</a></h6>
-                                    <p>An intuitive way to build responsive grids without getting a headache.</p>
+                                    <h6><a href="" target="_blank"></a></h6>
+                                    <p></p>
                                     <div class="btn-bar">
-                                        <a href="" class="px-btn-arrow">
+                                        <a href="" target="_blank" class="px-btn-arrow">
                                             <span>Read More</span>
                                             <i class="arrow"></i>
                                         </a>
                                     </div>
+                                </div>
+                                <div class="blog-footer">
+                                    <p></p>
                                 </div>
                             </div>
-                            <div class="col-sm-12 blog-post">
+                            <div id="blog2" class="col-sm-12 blog-post">
                                 <div class="blog-img">
-                                    <a href="">
-                                        <img src="/img/git-article.jpg" title="" alt="">
+                                    <a href="" target="_blank">
+                                        <img src="" title="" alt="">
                                     </a>
                                 </div>
                                 <div class="blog-info">
-                                    <h6><a href="">How to create a repo on GitHub Desktop</a></h6>
-                                    <p>Source control basics for improving teamwork and managing your changes.</p>
+                                    <h6><a href="" target="_blank"></a></h6>
+                                    <p></p>
                                     <div class="btn-bar">
-                                        <a href="" class="px-btn-arrow">
+                                        <a href="" target="_blank" class="px-btn-arrow">
                                             <span>Read More</span>
                                             <i class="arrow"></i>
                                         </a>
                                     </div>
+                                </div>
+                                <div class="blog-footer">
+                                    <p></p>
                                 </div>
                             </div>
-                            <div class="col-sm-12 blog-post">
+                            <div id="blog3" class="col-sm-12 blog-post">
                                 <div class="blog-img">
-                                    <a href="">
-                                        <img src="/img/blog-test.jpg" title="" alt="">
+                                    <a href="" target="_blank">
+                                        <img src="" title="" alt="">
                                     </a>
                                 </div>
                                 <div class="blog-info">
-                                    <h6><a href="">Is JQuery Still Relevant in 2021?</a></h6>
-                                    <p>The JavaScript library has been a go-to for years, but does it have a future?</p>
+                                    <h6><a href="" target="_blank"></a></h6>
+                                    <p></p>
                                     <div class="btn-bar">
-                                        <a href="" class="px-btn-arrow">
+                                        <a href="" target="_blank" class="px-btn-arrow">
                                             <span>Read More</span>
                                             <i class="arrow"></i>
                                         </a>
                                     </div>
+                                </div>
+                                <div class="blog-footer">
+                                    <p></p>
                                 </div>
                             </div>
-                            <div class="col-sm-12 blog-post">
+                            <div id="blog4" class="col-sm-12 blog-post">
                                 <div class="blog-img">
-                                    <a href="">
-                                        <img src="/img/template.jpg" title="" alt="">
+                                    <a href="" target="_blank">
+                                        <img src="" title="" alt="">
                                     </a>
                                 </div>
                                 <div class="blog-info">
-                                    <h6><a href="">10 Bootstrap Templates for your Next Project</a></h6>
-                                    <p>Choose from these 10 beautiful designs to take your responsive project to the next level.</p>
+                                    <h6><a href="" target="_blank"></a></h6>
+                                    <p></p>
                                     <div class="btn-bar">
-                                        <a href="" class="px-btn-arrow">
+                                        <a href="" target="_blank" class="px-btn-arrow">
                                             <span>Read More</span>
                                             <i class="arrow"></i>
                                         </a>
                                     </div>
+                                </div>
+                                <div class="blog-footer">
+                                    <p></p>
                                 </div>
                             </div>
-                            <div class="col-sm-12 blog-post">
+                            <div id="blog5" class="col-sm-12 blog-post">
                                 <div class="blog-img">
-                                    <a href="">
-                                        <img src="/img/launch.jpg" title="" alt="">
+                                    <a href="" target="_blank">
+                                        <img src="" title="" alt="">
                                     </a>
                                 </div>
                                 <div class="blog-info">
-                                    <h6><a href="">How to Deploy a Site to Netlify</a></h6>
-                                    <p>Take your static site live quickly and easily with Netlify's quick, easy hosting.</p>
+                                    <h6><a href="" target="_blank"></a></h6>
+                                    <p></p>
                                     <div class="btn-bar">
-                                        <a href="" class="px-btn-arrow">
+                                        <a href="" target="_blank" class="px-btn-arrow">
                                             <span>Read More</span>
                                             <i class="arrow"></i>
                                         </a>
                                     </div>
+                                </div>
+                                <div class="blog-footer">
+                                    <p></p>
                                 </div>
                             </div>
                         </div>
@@ -640,7 +655,7 @@
                         <p>I would love to hear from you!</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-lg-7 col-xl-8 pr-xl-5 m-15px-tb">
                         <div class="contactus-form">
                             <h6>Say hello</h6>
@@ -668,14 +683,14 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="btn-bar">
-                                            <button type="submit" id="button" class="px-btn px-btn-theme w-100"><span>Contact Me!</span></button>
+                                            <button type="submit" id="button" class="g-recaptcha px-btn px-btn-theme w-100" data-sitekey="6LcEDJEiAAAAADZP2cl9f9v68U5DMM7QZqfYCZFd" data-callback="onSubmit"><span>Contact Me!</span></button>
                                         </div>
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <div class="col-lg-5 col-xl-4 m-15px-tb">
+                    <!-- <div class="col-lg-5 col-xl-4 m-15px-tb">
                         <div class="contact-info">
                             <h4>Let's talk!</h4>
                             <p>I am open to freelance and full-time opportunities. I look forward to hearing from you!</p>
@@ -695,7 +710,7 @@
                             </ul>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <!-- End Contact -->
@@ -718,6 +733,14 @@
         </div>
     </footer>
     <!-- End Footer -->
+    <!-- recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+    function onSubmit(token) {
+        document.getElementById("form").submit();
+    }
+    </script>
+    <!-- end recaptcha -->
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- end jquery -->
@@ -744,6 +767,8 @@
     <script type="text/javascript">
         emailjs.init('user_jPzS6TFVu9gBKxWQa8UGz')
       </script>
+    <!-- blog api -->
+    <script src="/js/blogapi.js"></script>
     <!-- custom js -->
     <script src="/js/custom.js"></script>
     <!-- end -->
